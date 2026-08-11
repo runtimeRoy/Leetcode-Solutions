@@ -14,4 +14,6 @@ class Solution(object):
             last_digit = n%10
             sum = sum*10 + last_digit
             n //= 10
-        return n == sum or n == sum // 10
+
+        if n == sum or n == sum // 10:
+            return True
